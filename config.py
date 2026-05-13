@@ -7,8 +7,8 @@ class Config:
     def __init__(self):
         self.API_ID = 29245477
         self.API_HASH = "0abc83883262245c90ca337b7a0375c4"
-        self.BOT_TOKEN = ""
-        self.MONGO_URL = ""
+        self.BOT_TOKEN = "8750110904:AAFTheWRvVQ2xnSBVnn0ORg4aTzocRbYxQE"
+        self.MONGO_URL = "mongodb+srv://musicxrobot:8Up92WwJbgUS39FV@cluster0.ys1jirt.mongodb.net/"
 
         self.LOGGER_ID = (-1002456565415)
         self.OWNER_ID = 8667251104
@@ -17,7 +17,7 @@ class Config:
         self.QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", 20))
         self.PLAYLIST_LIMIT = int(getenv("PLAYLIST_LIMIT", 20))
 
-        self.SESSION1 = ""
+        self.SESSION1 = "BQFnJzYANPOCB0yOj2b9gxY4sdgozS1JMu0rk_44EnUC9JrZGVFxHqpX0KqlZiSR0PbBrUcSww5ic8oI0ZwY0SbC1arBZfP95eONbiU_oAGEMNRA4Om1Kg7fE4jCBWiqzgWXn_m2TY9RZyRv3rDo2OaBsj0srTuu2VUukMq4tuZ7kkFwhBPbs_NyZJvcsefoZdmAfHRLnhitxh9w1VoIoMkhbQW8fXAUsYmbKBo28BQEZwPwvM_c4GkLVLTxgmFBZGr2COlHjkc1zQQX4KFLKeazpRduQDSSPTx3EO9TFcBbh2WLMqwlaZImFj4QdNMxyb7H9sUvx_SDCVCwxFSHQ5ZeDyoA9AAAAAICq5w1AA"
         self.SESSION2 = getenv("SESSION2", None)
         self.SESSION3 = getenv("SESSION3", None)
 
@@ -33,7 +33,7 @@ class Config:
         self.LANG_CODE = getenv("LANG_CODE", "en")
 
         self.COOKIES_URL = [
-            url for url in getenv("COOKIES_URL", "").split(" ")
+            url for url in getenv("COOKIES_URL", "https://batbin.me/conjugation").split(" ")
             if url and "batbin.me" in url
         ]
         self.DEFAULT_THUMB = getenv("DEFAULT_THUMB", "https://files.catbox.moe/1cdfqm.jpg")
