@@ -5,8 +5,8 @@ load_dotenv()
 
 class Config:
     def __init__(self):
-        self.API_ID = 29245477
-        self.API_HASH = "0abc83883262245c90ca337b7a0375c4"
+        self.API_ID = 
+        self.API_HASH = ""
         self.BOT_TOKEN = ""
         self.MONGO_URL = ""
 
